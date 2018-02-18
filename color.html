@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <title>Color Mixer</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/stylePicker.css">
+   
+</head>
+ 
+<body>
+
+<section 
+    class="delay-animation fade-in"
+    data-color-picker>
+</section>
+    
+ 
+<div class="wrapper" id="color">
+
+  <div class="controls row">
+    <div class="col-sm-4">
+        <p id="red">
+        <label for="red">Red</label> <br>
+        <p id="red-div">
+            <input type="range" min="0" max="255" value="255" id="red-range"> <br>
+        </p>
+        <input class="form-control" type="number" min="0" max="255" value="255" id="red-number"> <br>
+        </p>
+    </div>
+
+    <div class="col-sm-4">
+        <p id="green">
+        <label for="green">Green</label> <br>
+        <p id="green-div">
+            <input type="range" min="0" max="255" value="255" id="green-range"> <br>
+        </p>
+        <input class="form-control" type="number" min="0" max="255" value="255" id="green-number"> <br>
+        </p>
+    </div>
+
+    <div class="col-sm-4">
+        <p id="blue">
+        <label for="green">Blue</label> <br>
+        <p id="blue-div">
+            <input type="range" min="0" max="255" value="255" id="blue-range"> <br>
+        </p>
+        <input class="form-control" type="number" min="0" max="255" value="255" id="blue-number"> <br>
+        </p>
+    </div>
+  </div>
+
+  <div class="controls row">
+
+    <div class="col-sm-3">
+        <p id="cyan">
+            <label for="cyan">Cyan</label> <br>
+        <p id="cyan-div">
+            <input type="range" min="0" max="100" value="0" id="cyan-range"> <br>
+        </p>
+            <input class="form-control" type="number" min="0" max="100" value="0" id="cyan-number" disabled="true"> <br>
+        </p>
+    </div>
+
+    <div class="col-sm-3">
+        <p id="magenta">
+            <label for="magenta">Magenta</label> <br>
+        <p id="magenta-div">
+            <input type="range" min="0" max="100" value="0" id="magenta-range"> <br>
+        </p>
+            <input class="form-control" type="number" min="0" max="100" value="0" id="magenta-number" disabled="true"> <br>
+        </p>
+    </div>
+
+    <div class="col-sm-3">
+        <p id="yellow">
+            <label for="yellow">Yellow</label> <br>
+        <p id="yellow-div">
+            <input type="range" min="0" max="100" value="0" id="yellow-range"> <br>
+        </p>
+            <input class="form-control" type="number" min="0" max="100" value="0" id="yellow-number" disabled="true"> <br>
+        </p>
+    </div>
+
+    <div class="col-sm-3">
+        <p id="black">
+            <label for="black">Black</label> <br>
+        <p id="black-div">
+            <input type="range" min="0" max="100" value="0" id="black-range"> <br>
+        </p>
+            <input class="form-control" type="number" min="0" max="100" value="0" id="black-number" disabled="true"> <br>
+        </p>
+    </div>
+  </div>
+
+  <div class="controls row">
+        <div class="col-sm-4">
+            <p id="hue">
+            <label for="hue">Hue</label> <br>
+            <p id="hue-div">
+                <input type="range" min="0" max="360" value="0" id="hue-range"> <br>
+            </p>
+            <input class="form-control" type="number" min="0" max="360" value="0" id="hue-number" disabled="true"> <br>
+            </p>
+        </div>
+    
+        <div class="col-sm-4">
+            <p id="saturation">
+            <label for="saturation">Saturation</label> <br>
+            <p id="saturation-div">
+                <input type="range" min="0" max="100" value="0" id="saturation-range"> <br>
+            </p>
+            <input class="form-control" type="number" min="0" max="100" value="0" id="saturation-number" disabled="true"> <br>
+            </p>
+        </div>
+    
+        <div class="col-sm-4">
+            <p id="value">
+            <label for="value">Value</label> <br>
+            <p id="value-div">
+                <input type="range" min="0" max="100" value="100" id="value-range"> <br>
+            </p>
+            <input class="form-control" type="number" min="0" max="100" value="100" id="value-number" disabled="true"> <br>
+            </p>
+        </div>
+  </div>
+
+  <div class="controls row">
+        <div class="col-sm-4">
+                <p id="l">
+                <label for="l">L</label> <br>
+                <p id="l-div">
+                    <input type="range" min="0" max="100" value="100" id="l-range"> <br>
+                </p>
+                <input class="form-control" type="number" min="0" max="100" value="100" id="l-number" disabled="true"> <br>
+                </p>
+            </div>
+        
+            <div class="col-sm-4">
+                <p id="a">
+                <label for="a">A</label> <br>
+                <p id="a-div">
+                    <input type="range" min="-128" max="128" value="0" id="a-range"> <br>
+                </p>
+                <input class="form-control" type="number" min="-128" max="128" value="0" id="a-number" disabled="true"> <br>
+                </p>
+            </div>
+        
+            <div class="col-sm-4">
+                <p id="b">
+                <label for="b">B</label> <br>
+                <p id="b-div">
+                    <input type="range" min="-128" max="128" value="0" id="b-range"> <br>
+                </p>
+                <input class="form-control" type="number" min="-128" max="128" value="0" id="b-number" disabled="true"> <br>
+                </p>
+            </div>
+  </div>
+
+</div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha256-/5pHDZh2fv1eZImyfiThtB5Ag4LqDjyittT7fLjdT/8=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/color.js"></script>
+    <script type="text/javascript" src="js/colorPicker.js"></script>
+    
+</body>
+</html>
